@@ -55,11 +55,13 @@ input:focus {
   color: rgba(78, 205, 196, 0.84);
 }
 
-footer {
-  border-top: 2px solid;
+.register_footer {
+  border: none;
+  border-top: 2px solid #fff;
   background-color: rgba(78, 205, 196, 0.84);
   height: 40px;
   color: #fff;
+  width: 100%;
   font-weight: bold;
   line-height: 40px;
   margin-top: 50px;
