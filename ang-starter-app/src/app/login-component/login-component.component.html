@@ -1,5 +1,5 @@
 <section class="login">
-    <section class="login_inner">
+    <form class="login_inner">
         <header class="login_avatar"></header>
         <main>
             <section class="username wrapper">
@@ -12,9 +12,9 @@
             </section>
         </main>
         <footer type="button" class="login_footer">LOGIN</footer>
-    </section>
+    </form>
 </section>
-<section class="register">
+<section class="register" type="button" (click)="RegisterForm = true">
     NEW USER? REGISTER NOW
-    <app-register></app-register>
+    <app-register *ngIf="RegisterForm === true"></app-register>
 </section>

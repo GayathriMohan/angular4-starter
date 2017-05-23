@@ -1,22 +1,23 @@
-<section class="register_inner">
+<form class="register_inner" #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm.value)">
         <header class="login_avatar"></header>
         <main>
             <section class="wrapper">
-                <input type="text" name="firstName">
+                <input type="text" name="firstName" ngModel #name="ngModel">
                 <label for="firstName">Enter you firstname</label>
             </section>
             <section class="wrapper">
-                <input type="text" name="lastName">
+                <input type="text" name="lastName" ngModel>
                 <label for="lastName">Enter your lastname</label>
             </section>
             <section class="wrapper">
-                <input type="email" name="username">
+                <input type="email" name="username" ngModel>
                 <label for="email">Username</label>
             </section>
             <section class="wrapper">
-                <input type="password" name="pwd">
+                <input type="password" name="pwd" ngModel>
                 <label for="password">Password</label>
             </section>
         </main>
-        <footer type="button" class="register_footer">REGISTER</footer>
-</section>
+        <button type="submit" class="register_footer">REGISTER</button>
+        <ul><li *ngFor="let person of persons">Name: , Age: , Email: </li></ul>
+</form>
