@@ -63,25 +63,27 @@
    color: rgba(78, 205, 196, 0.84);
  }
  
- footer {
+ .login_footer {
+   border: none;
    border-top: 2px solid;
    background-color: rgba(78, 205, 196, 0.84);
    height: 40px;
    color: #fff;
+   width: 100%;
    font-weight: bold;
    line-height: 40px;
    margin-top: 50px;
  }
-
-.register {
-  background-color: #2B2D42;
-  text-align: center;
-  margin: 0 auto;
-  width: 300px;
-  height: auto;
-  color: #fff;
-  line-height: 40px;
-  margin-top: 15px;
-  border: 2px solid rgba(78, 205, 196, 0.84);
-  border-radius: 4px;
-}
+ 
+ .register {
+   background-color: #2B2D42;
+   text-align: center;
+   margin: 0 auto;
+   width: 300px;
+   height: auto;
+   color: #fff;
+   line-height: 40px;
+   margin-top: 15px;
+   border: 2px solid rgba(78, 205, 196, 0.84);
+   border-radius: 4px;
+ }

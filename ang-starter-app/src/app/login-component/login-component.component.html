@@ -1,17 +1,17 @@
 <section class="login">
-    <form class="login_inner">
+    <form (ngSubmit)="loginSubmit()" class="login_inner">
         <header class="login_avatar"></header>
         <main>
             <section class="username wrapper">
-                <input type="email" name="username">
+                <input type="email" name="username" [(ngModel)]="data.username">
                 <label for="email">Username</label>
             </section>
             <section class="password wrapper">
-                <input type="password" name="pwd">
+                <input type="password" name="pwd" [(ngModel)]="data.password">
                 <label for="password">Password</label>
             </section>
         </main>
-        <footer type="button" class="login_footer">LOGIN</footer>
+        <button type="submit" class="login_footer">LOGIN</button>
     </form>
 </section>
 <section class="register" type="button" (click)="RegisterForm = true">
