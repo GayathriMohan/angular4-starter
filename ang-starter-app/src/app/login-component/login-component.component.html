@@ -1,3 +1,5 @@
+<p-multiSelect [options]="cars" [(ngModel)]="selectedCars"></p-multiSelect>
+<p>Selected Cars: {{selectedCars}}</p>
 <section class="login">
     <form (ngSubmit)="loginSubmit()" class="login_inner">
         <header class="login_avatar"></header>
@@ -16,5 +18,5 @@
 </section>
 <section class="register" type="button" (click)="RegisterForm = true">
     NEW USER? REGISTER NOW
-    <app-register *ngIf="RegisterForm === true"></app-register>
+    <!-- <app-register *ngIf="RegisterForm === true"></app-register> -->
 </section>
