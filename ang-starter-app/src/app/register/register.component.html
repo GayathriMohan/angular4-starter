@@ -1,23 +1,23 @@
-<form class="register_inner" #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm.value)">
-        <header class="login_avatar"></header>
-        <main>
-            <section class="wrapper">
-                <input type="text" name="firstName" ngModel #name="ngModel">
-                <label for="firstName">Enter you firstname</label>
-            </section>
-            <section class="wrapper">
-                <input type="text" name="lastName" ngModel>
-                <label for="lastName">Enter your lastname</label>
-            </section>
-            <section class="wrapper">
-                <input type="email" name="username" ngModel>
-                <label for="email">Username</label>
-            </section>
-            <section class="wrapper">
-                <input type="password" name="pwd" ngModel>
-                <label for="password">Password</label>
-            </section>
-        </main>
-        <button type="submit" class="register_footer">REGISTER</button>
-        <ul><li *ngFor="let person of persons">Name: , Age: , Email: </li></ul>
+<form class="register_inner" #registrationForm="ngForm" (ngSubmit)="onRegister()">
+    <header class="login_avatar"></header>
+    <main>
+        <section class="wrapper">
+            <input type="text" name="firstName" [(ngModel)]='model.firstName'>
+            <label for="firstName">Enter you firstname</label>
+        </section>
+        <section class="wrapper">
+            <input type="text" name="lastName" [(ngModel)]='model.lastName'>
+            <label for="lastName">Enter your lastname</label>
+        </section>
+        <section class="wrapper">
+            <input type="email" name="username" [(ngModel)]='model.username'>
+            <label for="email">Username</label>
+        </section>
+        <section class="wrapper">
+            <input type="password" name="pwd" [(ngModel)]='model.password'>
+            <label for="password">Password</label>
+        </section>
+    </main>
+    <button type="submit" class="register_footer">REGISTER</button>
+    <!-- <a [routerLink]="['/login']">Cancel</a> -->
 </form>
